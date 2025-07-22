@@ -15,5 +15,3 @@ def github_webhook(request):
     return JsonResponse({"message": "Only POST requests allowed"}, status=400)
 
 
-
-
