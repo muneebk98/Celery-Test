@@ -5,7 +5,6 @@ from celery import shared_task
 @shared_task
 def update_code_task():
     try:
-        # Fix: Use the correct project path
         project_path = "/home/muneeb-khalid/PycharmProjects/Celery_Practice/Celery_Project"
         os.chdir(project_path)
         result = subprocess.run(["git", "pull"], capture_output=True, text=True)
@@ -22,5 +21,9 @@ def update_code_task():
     except Exception as e:
         print(f"Deployment failed: {e}")
         return f"Deployment failed: {e}"
+
+
+
+
 
 
