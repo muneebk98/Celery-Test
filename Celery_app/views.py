@@ -13,3 +13,7 @@ def github_webhook(request):
         except Exception as e:
             return JsonResponse({"status": "error", "message": str(e)}, status=500)
     return JsonResponse({"message": "Only POST requests allowed"}, status=400)
+
+
+
+
