@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ypn%fr3-ozac39c63%v-p%b9-3y3t7kx&57ody@3heqa7g$h=4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["6a94d81168f6.ngrok-free.app", "localhost", "127.0.0.1"]
+ALLOWED_HOSTS = ["0802e784f230.ngrok-free.app", "localhost", "127.0.0.1"]
 
 
 # Application definition
@@ -125,11 +125,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 
-# CELERY SETTINGS (No .env, hardcoded here)
 
-CELERY_BROKER_URL = "redis://localhost:6379/0"  # Use Redis as broker
+CELERY_BROKER_URL = "redis://localhost:6379/0" 
 CELERY_RESULT_BACKEND = "redis://localhost:6379/0"
 CELERY_ACCEPT_CONTENT = ["json"]
 CELERY_TASK_SERIALIZER = "json"
-CELERY_TIMEZONE = "Asia/Karachi"  # Or your preferred timezone
+CELERY_TIMEZONE = "Asia/Karachi"  
 
